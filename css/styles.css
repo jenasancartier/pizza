@@ -53,6 +53,8 @@ img {
 label {
   font-family: 'Armata', sans-serif;
   color: #4d004d;
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 #size-options {
@@ -66,12 +68,12 @@ label {
 }
 
 #cheese-options {
-  font-family: 'Armata', sans-serif;
+  #00cc66
   color: #4d004d;
 }
 
 .row {
-  background-color: rgba(255, 128, 255, 0.75);
+  background-color: rgba(255, 128, 255, 0.70);
   padding: 35px;
   border-radius: 20px;
 }
@@ -79,4 +81,19 @@ label {
 .output {
   display: none;
   margin-left: 150px;
+}
+
+.btn {
+  background-color: #4d004d;
+  padding: 11px;
+  font-family: 'Armata', sans-serif;
+  font-size: 20px;
+  color: #00cc66;
+  border-color: #00cc66;
+}
+
+.btn:hover {
+  background-color: #00cc66;
+  color: #4d004d;
+  border-color: #4d004d;
 }

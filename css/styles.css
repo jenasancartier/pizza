@@ -1,8 +1,9 @@
 body {
-background-image: url(../img/plant-power.jpeg);
+background-image: url(../img/mystic-space.jpeg);
 }
 
 .jumbotron{
+  background-image: url(../img/pizza-banner.png);
   margin-top: 30px;
   text-align: center;
 }

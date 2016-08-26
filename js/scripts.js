@@ -7,29 +7,34 @@ function Pizza(size, protein, veggies) {
 
 Pizza.prototype.calculatePrice = function() {
   var pizzaPrice = 0;
+  debugger;
   if (this.size === "Small") {
     pizzaPrice += 8;
   } else if (this.size === "Medium") {
     pizzaPrice += 12;
   } else if (this.size === "Large") {
-    pizzaprice += 16;
+    pizzaPrice += 16;
   }
   if (this.protein === "Field Sausage") {
     pizzaPrice += 3;
   } else if (this.protein === "Pepper Roni") {
     pizzaPrice += 2;
-  } else if (this.protein === "BBQ Chickum") {
+  } else if (this.protein === "BBQ Chickpeas") {
     pizzaPrice += 3;
-  } else {
-    for (var i=0; i<selectVeggies.length; i++) {
-      pizzaPrice += ([i] * 2);
-    }
-
+  }
+  var i = this.veggies[i];
+  for (var i=0; i<this.veggies.length; i++) {
+    pizzaPrice += ([i] * 2);
     }
     return pizzaPrice;
   }
 
+
 var newPizza;
+
+// for (i=0; i<this.veggies[i]; i++) {
+//   pizzaPrice += ([i] * 2);
+// }
 
 //user interface logic:
 $(document).ready(function(){

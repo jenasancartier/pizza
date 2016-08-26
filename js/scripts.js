@@ -14,8 +14,22 @@ Pizza.prototype.calculatePrice = function() {
   } else if (this.size === "Large") {
     pizzaprice += 16;
   }
-  return pizzaPrice;
-}
+  if (this.protein === "Field Sausage") {
+    pizzaPrice += 3;
+  } else if (this.protein === "Pepper Roni") {
+    pizzaPrice += 2;
+  } else if (this.protein === "BBQ Chickum") {
+    pizzaPrice += 3;
+  } else {
+    for (var i=0; i<selectVeggies.length; i++) {
+      pizzaPrice += ([i] * 2);
+    }
+
+    }
+    return pizzaPrice;
+  }
+
+var newPizza;
 
 //user interface logic:
 $(document).ready(function(){
@@ -25,12 +39,12 @@ $(document).ready(function(){
     var selectProtein = $("select#protein-options").val();
     var selectVeggies = [];
     $(".veggie-option").each(function(index, checkbox) {
-    console.log( checkbox )
     var checked = checkbox.checked;
     var value = $(checkbox).val();
     if (checked) {
       selectVeggies.push(value);
     }
+    // var newPizza = new Pizza(selectSize, selectProtein, selectVeggies);
   });
 
     var newPizza = new Pizza(selectSize, selectProtein, selectVeggies);

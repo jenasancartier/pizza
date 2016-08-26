@@ -31,10 +31,7 @@ Pizza.prototype.calculatePrice = function() {
   } else if (this.cheese === "Creamy Avocado Pesto Cheese") {
     pizzaPrice += 3;
   }
-  var i = this.veggies[i];
-  for (var i=0; i<this.veggies.length; i++) {
-    pizzaPrice += ([i] * 2);
-    }
+    pizzaPrice += (this.veggies.length * 2);
     return pizzaPrice;
   }
 

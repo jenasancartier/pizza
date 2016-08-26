@@ -11,7 +11,7 @@ A web application (using HTML, CSS, JavaScript, jQuery, and Bootstrap) that allo
 
 ### Setup/Installation
 1. _Clone this repository at:_
-  * https://github.com/jenasancartier/ping-pong.git
+  * https://github.com/jenasancartier/pizza.git
 2. _Move into the project folder_
 3. _Open index.html in the browser of your choice (preferably Chrome) OR_
 4. _You can simply open the website in your browser with this link:_

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.0"></script>
+    <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza</title>
   </head>
@@ -33,41 +33,49 @@
             </div>
             <br>
             <div class="check-box">
-            <h4>Add your veggies:</h4>
-              <label>
-                <input type="checkbox" id="mushrooms">
-                Mushrooms
-              </label>
+              <div class="veggie-options">
+              <h4>Add your veggies:</h4>
+                <label>
+                  <input type="checkbox" value="Mushrooms" id="mushrooms">
+                  Mushrooms
+                </label>
+              </div>
+              <div class="check-box">
+                <label>
+                  <input type="checkbox" value="artichokes" id="artichokes">
+                  Artichokes
+                </label>
+              </div>
+              <div class="check-box">
+                <label>
+                  <input type="checkbox" value="arugula" id="arugula">
+                  Arugula
+                </label>
+              </div>
+              <div class="check-box">
+                <label>
+                  <input type="checkbox" value="green-peppers" id="green-peppers">
+                  Green Peppers
+                </label>
+              </div>
             </div>
             <div class="check-box">
               <label>
-                <input type="checkbox" id="artichokes">
-                Artichokes
-              </label>
-            </div>
-            <div class="check-box">
-              <label>
-                <input type="checkbox" id="arugula">
-                Arugula
-              </label>
-            </div>
-            <div class="check-box">
-              <label>
-                <input type="checkbox" id="green-peppers">
-                Green Peppers
-              </label>
-            </div>
-            <div class="check-box">
-              <label>
-                <input type="checkbox" id="olives">
+                <input type="checkbox" value="olives" id="olives">
                 Black Olives
               </label>
             </div>
             <br>
-            <button type="submit" class="btn">Complete Order</button>
+            <button type="submit" id="complete-order" class="btn">Complete Order</button>
           </form>
         </div>
       </div>
+        <div class="output">
+          <h2>Your pizza order: </h2>
+          <p>Pizza size: <span id="showSize"></span></p>
+          <p>Protein: <span id="showProtein"><span></p>
+          <p>Chosen veggies: <span id="showVeggies"></span></p>
+        </div>
     </div>
   </body>
 </html>

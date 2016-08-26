@@ -8,8 +8,8 @@ function Pizza(size, protein, cheese, veggies) {
 
 
 Pizza.prototype.calculatePrice = function() {
-  var pizzaPrice = 0;
   debugger;
+  var pizzaPrice = 0;
   if (this.size === "Small") {
     pizzaPrice += 8;
   } else if (this.size === "Medium") {

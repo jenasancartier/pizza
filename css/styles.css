@@ -1,19 +1,73 @@
 body {
 background-image: url(../img/mystic-space.jpeg);
+/*color: white;*/
 }
 
 h1 {
   font-size: 150px;
   font-family: 'Creepster', cursive;
   text-align: center;
-  color: #ccff99;
+  /*color: #ccff99;*/
+  color: #d5ff80;
   margin-top: 90px;
-  margin-bottom: 40px;
+  margin-bottom: -30px;
+}
+h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  color: #00cc66;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-family: 'Patua One', cursive;
+  font-size: 40px;
+  color: #4d004d;
+}
+
+h4 {
+  color: #4d004d;
+  font-size: 25px;
+  font-family: 'Patua One', cursive;
+}
+
+h5 {
+  font-family: 'Patua One', cursive;
+  font-size: 35px;
+  color: #4d004d;
+  margin-top: 50px;
+}
+
+p {
+  color: #4d004d;
+  font-family: 'Armata', sans-serif;
+  font-size: 20px;
 }
 
 img {
   margin-left: 90px;
   max-width: 400px;
+}
+
+label {
+  font-family: 'Armata', sans-serif;
+  color: #4d004d;
+}
+
+#size-options {
+  font-family: 'Armata', sans-serif;
+  color: #4d004d;
+}
+
+#protein-options {
+  font-family: 'Armata', sans-serif;
+  color: #4d004d;
+}
+
+#cheese-options {
+  font-family: 'Armata', sans-serif;
+  color: #4d004d;
 }
 
 .row {
